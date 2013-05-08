@@ -109,6 +109,10 @@ RTC::ReturnCode_t ConsoleOutput::onDeactivated(RTC::UniqueId ec_id)
 
 RTC::ReturnCode_t ConsoleOutput::onExecute(RTC::UniqueId ec_id)
 {
+  if(m_inIn.isNew()) {
+    m_inIn.read();
+    std::cout << "Received: " << m_in.data << std::endl;
+  }
   return RTC::RTC_OK;
 }
 
