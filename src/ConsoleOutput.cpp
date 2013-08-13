@@ -18,7 +18,7 @@ static const char* consoleoutput_spec[] =
     "description",       "Console Output Component",
     "version",           "1.0.0",
     "vendor",            "Sugar Sweet Robotics",
-    "category",          "Tutoria",
+    "category",          "Tutorial",
     "activity_type",     "PERIODIC",
     "kind",              "DataFlowComponent",
     "max_instance",      "1",
